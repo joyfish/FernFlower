@@ -1,3 +1,7 @@
+0. for build & compile with eclipse
+a, use eclipse import project
+b, need export to jar, make sure "Generate the manifest file" is true.
+
 1. About the decompiler 
 
 Fernflower is the first actually working analytical decompiler for Java and 

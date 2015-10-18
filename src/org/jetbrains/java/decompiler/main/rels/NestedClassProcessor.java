@@ -43,7 +43,7 @@ import org.jetbrains.java.decompiler.struct.gen.MethodDescriptor;
 import org.jetbrains.java.decompiler.struct.gen.VarType;
 import org.jetbrains.java.decompiler.util.InterpreterUtil;
 
-import com.sun.xml.internal.ws.org.objectweb.asm.Opcodes;
+//import com.sun.xml.internal.ws.org.objectweb.asm.Opcodes;
 
 import java.util.*;
 import java.util.Map.Entry;
