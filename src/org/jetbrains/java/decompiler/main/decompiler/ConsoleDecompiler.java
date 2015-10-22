@@ -78,6 +78,21 @@ public class ConsoleDecompiler implements IBytecodeProvider, IResultSaver {
     }
 
     File destination = new File(args[args.length - 1]);
+    
+    System.out.println("make dir:" + args[args.length - 1]);
+    
+    if(destination.exists())
+    {
+        destination.delete();
+    }
+    if(!destination.exists()){
+        //        saveFolder(args[args.length - 1]);
+        //File dir = new File(getAbsolutePath(args[args.length - 1]));
+        if (!(destination.mkdirs() || destination.isDirectory())) {
+          throw new RuntimeException("Cannot create directory " + args[args.length - 1]);
+        }
+	}
+
     if (!destination.isDirectory()) {
       System.out.println("error: destination '" + destination + "' is not a directory");
       return;
